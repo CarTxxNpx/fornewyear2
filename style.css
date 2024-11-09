@@ -1,0 +1,77 @@
+/* ตั้งค่าพื้นฐาน */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8bbd0; /* สีชมพูอ่อน */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+h1 {
+    color: #e91e63; /* สีชมพูสด */
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.button {
+    padding: 10px 20px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.forgive {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.not-forgive {
+    background-color: #f44336;
+    color: white;
+}
+
+/* สไตล์สำหรับหัวใจ */
+.heart {
+    position: absolute;
+    color: #e91e63;
+    font-size: 1.5em;
+    animation: float 5s ease-in-out infinite;
+    pointer-events: none;
+}
+
+/* แอนิเมชันหัวใจลอย */
+@keyframes float {
+    0% {
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100vh) scale(0.5);
+        opacity: 0;
+    }
+}
